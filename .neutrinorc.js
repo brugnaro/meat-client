@@ -9,6 +9,11 @@ module.exports = {
         }
       }
     ],
-    '@neutrinojs/jest'
+    '@neutrinojs/jest',
+    '@neutrinojs/eslint', {
+      rules: {
+        'react/jsx-filename-extension': [1, { extensions: ['.js', 'jsx'] }]
+      }
+    }
   ]
 };
